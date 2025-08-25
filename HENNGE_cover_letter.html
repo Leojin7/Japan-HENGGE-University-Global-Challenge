@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cover Letter – HENNGE Password Validation Challenge</title>
+  <style>
+    :root {
+      --text: #111;
+      --muted: #555;
+      --accent: #6b4ed3;
+    }
+    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color: var(--text); }
+    .page { max-width: 800px; margin: 40px auto; padding: 48px 56px; background: #fff; }
+    h1 { font-size: 24px; margin: 0 0 8px; }
+    h2 { font-size: 16px; margin: 24px 0 8px; color: var(--muted); }
+    p { line-height: 1.6; margin: 10px 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .header { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; border-bottom: 2px solid #eee; padding-bottom: 16px; margin-bottom: 24px; }
+    .from b { display: inline-block; font-size: 18px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    ul { margin: 8px 0 0 22px; }
+    .footer { margin-top: 24px; color: var(--muted); font-size: 14px; }
+    @media print {
+      body { background: #fff; }
+      .page { box-shadow: none; margin: 0; padding: 24mm; }
+      a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 12px; color: var(--muted); }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="header">
+      <div class="from">
+        <b><!-- Your Name -->[Your Full Name]</b>
+        <div class="meta">
+          Email: <a href="mailto:www.devruhela18@gmail.com">www.devruhela18@gmail.com</a><br/>
+          Phone: [Your Phone Number] · Location: [Your City, Country]
+        </div>
+      </div>
+      <div class="to meta">
+        HENNGE K.K.<br/>
+        Global Internship Program (GIP)<br/>
+        Frontend Password Validation Challenge
+      </div>
+    </div>
+
+    <h1>Application – HENNGE Global Internship Program (Frontend)</h1>
+
+    <p>
+      Dear HENNGE Team,
+    </p>
+
+    <p>
+      Please find my submission for the Frontend Password Validation Challenge. I implemented the solution in React and published the required single-file source as a Secret Gist for review:
+    </p>
+
+    <p>
+      Gist URL: <a href="https://gist.github.com/Leojin7/237d1c253a4f765d79dd05eeab8ea350">https://gist.github.com/Leojin7/237d1c253a4f765d79dd05eeab8ea350</a>
+    </p>
+
+    <h2>Solution highlights</h2>
+    <ul>
+      <li>Client-side password validation with exact messages and dynamic visibility</li>
+      <li>Prevents submit on blank username or invalid password</li>
+      <li>API integration to <code>/challenge-signup</code> with Bearer token from <code>?token=</code></li>
+      <li>Response handling: 200 success, 401/403 unauthorized, 422 not_allowed, and 500 generic error</li>
+      <li>Accessibility: proper labels ("Username"/"Password"), <code>aria-invalid</code>, clear error separation</li>
+      <li>No CSS changes; only <code>create-user-form.tsx</code> was modified as required</li>
+    </ul>
+
+    <h2>Motivation</h2>
+    <p>
+      I’m excited about HENNGE’s engineering culture and the opportunity to contribute to secure, user-centric products. This challenge reflects my focus on correctness, accessibility, and clean UX, and I would be thrilled to bring this mindset to the internship.
+    </p>
+
+    <p>
+      Thank you for your time and consideration. I look forward to the opportunity to discuss my application.
+    </p>
+
+    <p>Kind regards,<br/>
+      <b>[Your Full Name]</b><br/>
+      <a href="mailto:www.devruhela18@gmail.com">www.devruhela18@gmail.com</a>
+    </p>
+
+    <div class="footer">
+      Note: As instructed, only <code>create-user-form.tsx</code> was submitted. The app integrates with the provided API as per the OpenAPI specification.
+    </div>
+  </main>
+</body>
+</html>
