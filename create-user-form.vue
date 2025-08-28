@@ -1,9 +1,12 @@
+<!-- this is create_user_form-->
+
 <script setup lang="ts"></script>
 
 <template>
   <div class="form-wrapper">
     <form class="form">
       <!-- make sure the username and password are submitted -->
+      
       <!-- make sure the inputs have the accessible names of their labels -->
       <label>Username</label>
       <input />
