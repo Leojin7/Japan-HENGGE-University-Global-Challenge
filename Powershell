@@ -1,0 +1,20 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\ASUS> $email   = 'www.devruhela18@gmail.com'
+PS C:\Users\ASUS> $gistUrl = 'https://gist.github.com/Leojin7/237d1c253a4f765d79dd05eeab8ea350'
+PS C:\Users\ASUS> $payload = ('{{"contact_email":"{0}","github_url":"{1}","solution_framework":"react"}}' -f $email, $gistUrl)
+PS C:\Users\ASUS> $pair  = $email + ':HENNGECHALLENGE'
+PS C:\Users\ASUS> $basic = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes($pair))
+PS C:\Users\ASUS> "email len=$($email.Length)  pair len=$($pair.Length)  basic len=$($basic.Length)"
+email len=25  pair len=41  basic len=56
+PS C:\Users\ASUS> Invoke-RestMethod -Method Post -Uri "https://api.challenge.hennge.com/challenges/frontend-password-validation/001" -Headers @{ Authorization = "Basic $basic"; "Content-Type" = "application/json"; Accept="*/*" } -Body $payload
+
+message
+-------
+Congratulations! You have achieved mission 3
+
+
+PS C:\Users\ASUS>                   
