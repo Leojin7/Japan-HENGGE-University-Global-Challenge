@@ -1,0 +1,75 @@
+def main():
+    import sys
+    
+    # Read all input at once
+    data = []
+    for line in sys.stdin:
+        line = line.strip()
+        if line:  # Only process non-empty lines
+            data.append(line)
+    
+    if not data:
+        return
+    
+    try:
+        # First line is number of test cases
+        n = int(data[0])
+        if n < 1 or n > 100:
+            print(-1)
+            return
+            
+        results = []
+        idx = 1  # Start from first test case
+        
+        for _ in range(n):
+            if idx >= len(data):
+                results.append(-1)
+                break
+                
+            # Get the count of numbers for this test case
+            try:
+                x = int(data[idx])
+            except ValueError:
+                results.append(-1)
+                idx += 1
+                continue
+                
+            idx += 1
+            
+            # Check if we have the numbers line
+            if idx >= len(data):
+                results.append(-1)
+                break
+                
+            # Get the numbers
+            try:
+                numbers = list(map(int, data[idx].split()))
+            except ValueError:
+                results.append(-1)
+                idx += 1
+                continue
+                
+            # Check if count matches
+            if len(numbers) != x:
+                results.append(-1)
+                idx += 1
+                continue
+                
+            # Calculate sum of fourth powers of non-positive numbers
+            total = 0
+            for num in numbers:
+                if num <= 0:
+                    total += num ** 4
+                    
+            results.append(total)
+            idx += 1
+        
+        # Print all results
+        for result in results:
+            print(result)
+            
+    except Exception:
+        print(-1)
+
+if __name__ == "__main__":
+    main()
