@@ -7,6 +7,7 @@ def main():
         line = line.strip()
         if line:  # Only process non-empty lines
             data.append(line)
+            
     
     if not data:
         return
