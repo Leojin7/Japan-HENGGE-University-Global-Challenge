@@ -55,7 +55,7 @@ def main():
                 idx += 1
                 continue
                 
-            # Calculate sum of fourth powers of non-positive numbers
+          
             total = 0
             for num in numbers:
                 if num <= 0:
