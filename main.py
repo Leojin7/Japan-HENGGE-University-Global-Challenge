@@ -19,7 +19,7 @@ def main():
             return
             
         results = []
-        idx = 1  # Start from first test case
+        idx = 1  
         
         for _ in range(n):
             if idx >= len(data):
