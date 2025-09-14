@@ -6,6 +6,7 @@ const userWasCreated = ref(false);
 </script>
 
 <template>
+
   <CreateUserForm
     v-if="!userWasCreated"
     @create-successful="userWasCreated = true"
