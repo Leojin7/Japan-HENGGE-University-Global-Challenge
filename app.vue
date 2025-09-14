@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import CreateUserForm from './create-user-form.vue';
 
 const userWasCreated = ref(false);
+
 </script>
 
 <template>
