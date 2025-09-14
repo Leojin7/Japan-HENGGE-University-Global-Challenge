@@ -49,7 +49,7 @@ def main():
                 idx += 1
                 continue
                 
-            # Check if count matches
+           
             if len(numbers) != x:
                 results.append(-1)
                 idx += 1
