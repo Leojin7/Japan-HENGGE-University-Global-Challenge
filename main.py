@@ -26,7 +26,7 @@ def main():
                 results.append(-1)
                 break
                 
-            # Get the count of numbers for this test case
+            
             try:
                 x = int(data[idx])
             except ValueError:
