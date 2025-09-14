@@ -64,7 +64,7 @@ def main():
             results.append(total)
             idx += 1
         
-        # Print all results
+       
         for result in results:
             print(result)
             
