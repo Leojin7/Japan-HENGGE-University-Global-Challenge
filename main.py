@@ -12,7 +12,7 @@ def main():
         return
     
     try:
-        # First line is number of test cases
+        
         n = int(data[0])
         if n < 1 or n > 100:
             print(-1)
