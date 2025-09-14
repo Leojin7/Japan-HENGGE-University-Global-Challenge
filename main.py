@@ -1,7 +1,7 @@
 def main():
     import sys
     
-    # Read all input at once
+    
     data = []
     for line in sys.stdin:
         line = line.strip()
