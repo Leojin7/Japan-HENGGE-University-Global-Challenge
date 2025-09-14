@@ -36,7 +36,7 @@ def main():
                 
             idx += 1
             
-            # Check if we have the numbers line
+           
             if idx >= len(data):
                 results.append(-1)
                 break
