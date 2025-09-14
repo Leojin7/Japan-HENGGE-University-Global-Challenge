@@ -41,7 +41,7 @@ def main():
                 results.append(-1)
                 break
                 
-            # Get the numbers
+           
             try:
                 numbers = list(map(int, data[idx].split()))
             except ValueError:
